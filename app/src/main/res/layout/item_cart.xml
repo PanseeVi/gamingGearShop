@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/item_cartImg"
+            android:layout_width="100dp"
+            android:scaleType="centerCrop"
+            android:layout_height="100dp"
+            android:src="@drawable/ico_image"/>
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/item_cartTensp"
+                android:text="xxxxx"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:weightSum="18"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/item_cartGiasp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:layout_gravity="center"
+                    android:text="xxxxx"
+                    android:textColor="@color/red"
+                    android:textSize="8sp" />
+
+                <ImageView
+                    android:id="@+id/im_cartTrusp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ico_remove" />
+                <TextView
+                    android:id="@+id/tv_cartSoluong"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="1"/>
+                <ImageView
+                    android:id="@+id/im_cartCongsp"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ico_add" />
+                <ImageView
+                    android:id="@+id/im_cartBangsp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ico_drag_handle" />
+                <TextView
+                    android:id="@+id/item_cartGiaspTT"
+                    android:text="xxxxx"
+                    android:layout_gravity="center"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.registerAct">
+
+    <TextView
+        android:id="@+id/tvDN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Đăng ký"
+        android:textColor="@color/main"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDN"
+        tools:layout_editor_absoluteX="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dkmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:drawableLeft="@drawable/ico_email_24"
+            android:drawablePadding="5dp"
+            android:hint="Nhập email"
+            android:textColor="@color/main"
+            android:textColorHint="@color/main" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail"
+        tools:layout_editor_absoluteX="6dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dkpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:drawableLeft="@drawable/ico_pass_24"
+            android:drawablePadding="5dp"
+            android:hint="Nhập password"
+            android:inputType="textPassword"
+            android:textColor="@color/main"
+            android:textColorHint="@color/main" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtrepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtpass"
+        tools:layout_editor_absoluteX="6dp">
+        <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_dkrepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:drawableLeft="@drawable/ico_pass_24"
+        android:drawablePadding="5dp"
+        android:hint="Nhập lại password"
+        android:inputType="textPassword"
+        android:textColor="@color/main"
+        android:textColorHint="@color/main"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtrepass"
+        tools:layout_editor_absoluteX="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dkmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:drawableLeft="@drawable/ico_phone"
+            android:drawablePadding="5dp"
+            android:hint="Nhập số điện thoại"
+            android:textColor="@color/main"
+            android:textColorHint="@color/main" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtmobile"
+        tools:layout_editor_absoluteX="6dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_dkusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:drawableLeft="@drawable/ico_person"
+            android:drawablePadding="5dp"
+            android:hint="Nhập username"
+            android:textColor="@color/main"
+            android:textColorHint="@color/main" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/main"
+        android:text="ĐĂNG KÝ"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtusername"
+        tools:layout_editor_absoluteX="36dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
